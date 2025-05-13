@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Content mapping for each card
     const contentData = {
-      'Introdução': `O Guia Alimentar para a População Brasileira é um documento oficial que promove a saúde por meio da alimentação adequada e saudável. Ele se dirige a todas as pessoas e comunidades, orientando escolhas alimentares conscientes e respeitando os hábitos culturais do Brasil. Pode ser utilizado em casa, escolas, postos de saúde e em qualquer lugar onde se promova a saúde. Além de informar, o guia inspira autonomia alimentar e está baseado em evidências científicas e experiências da população.`,
+      'Escolhas Conscientes': `O Guia Alimentar fortalece a autonomia das pessoas ao oferecer informações confiáveis e acessíveis sobre alimentação. Ele ensina como ler rótulos, entender a influência da publicidade e identificar alimentos realmente saudáveis, promovendo o direito de fazer escolhas melhores — para o corpo, a mente e a sociedade.`,
       'Princípios Básicos': `O guia é baseado em cinco princípios fundamentais:
   </br></br>
   • Alimentação é mais do que ingerir nutrientes — envolve cultura, prazer e modo de vida.
@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
   • Evitar alimentos ultraprocessados, mesmo os que pareçam “saudáveis” por rótulo.
   </br></br>
   • Ser crítico à publicidade de alimentos e valorizar sua cultura alimentar.`,
-      'Guia Completo em PDF': `Baixe o guia oficial para consultas offline e estudo aprofundado.`,
+      'Guia Completo': `Baixe o guia oficial para consultas offline e estudo aprofundado.`,
       'Vídeos Educativos': `Assista a palestras e vídeos sobre hábitos alimentares saudáveis.</br><button class="btn"><a href="https://www.youtube.com/watch?v=thUMk4coJfo&list=PLaS1ddLFkyk-ObbBv4eWkHIhc5B49a9Sw">Assistir</a>`,
-      'Plataformas de Apoio': `Acesse plataformas e apps para acompanhamento nutricional.`,
+      'Guias Alimentares': `Acesse plataformas e apps para acompanhamento nutricional.`,
     };
   
     // Get all "Ver mais" anchors in features and pricing sections
-    const verMaisButtons = document.querySelectorAll('.features .card a, .pricing .card button a');
+    const verMaisButtons = document.querySelectorAll('.features .cardvm a, .cardvm button a');
   
     verMaisButtons.forEach(button => {
       button.addEventListener('click', (e) => {
@@ -137,4 +137,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  
+  const modal = document.getElementById("modal");
+  const btn = document.querySelector(".btn");
+  const closeBtn = document.querySelector(".close-btn");
+
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });

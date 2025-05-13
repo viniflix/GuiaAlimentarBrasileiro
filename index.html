@@ -40,7 +40,7 @@
                 Este guia é uma ferramenta essencial para promover uma alimentação saudável e equilibrada.
                 Aqui, você encontrará informações valiosas sobre os grupos alimentares, dicas práticas e muito mais.
             </p>
-            <button class="btn">Saiba Mais</button>
+            <button class="btn" id="btn-saiba-mais">Saiba Mais</button>
         </div>
         <div class="image cell2">
             <img src="https://www.pikpng.com/pngl/b/516-5165163_frutas-y-verduras-fruits-and-vegetables-clipart.png" alt="Imagem de Alimentos Saudáveis" />
@@ -50,25 +50,25 @@
     <section id="conteudo-guia" class="container">
         <h2 class="header">CONTEÚDO DO GUIA</h2>
         <div class="features">
-            <div class="card">
+            <div class="card cardvm">
                 <span><i class="ri-restaurant-fill"></i></span>
-                <h4>Introdução</h4>
-                <p>Entenda o que é o guia e como ele pode ajudar na sua saúde.</p>
+                <h4>Escolhas Conscientes</h4>
+                <p>Aprenda a decidir melhor o que colocar no prato todos os dias.</p>
                 <a href="#">Ver mais <i class="ri-arrow-right-line"></i></a>
             </div>
-            <div class="card">
+            <div class="card cardvm">
                 <span><i class="ri-heart-pulse-fill"></i></span>
                 <h4>Princípios Básicos</h4>
                 <p>Os cinco princípios para promover saúde através da alimentação.</p>
                 <a href="#">Ver mais <i class="ri-arrow-right-line"></i></a>
             </div>
-            <div class="card">
+            <div class="card cardvm">
                 <span><i class="ri-bar-chart-box-fill"></i></span>
                 <h4>Consumo Ideal</h4>
                 <p>Saiba quais alimentos priorizar e quais devem ser evitados no dia a dia.</p>
                 <a href="#">Ver mais <i class="ri-arrow-right-line"></i></a>
             </div>
-            <div class="card">
+            <div class="card cardvm">
                 <span><i class="ri-brain-fill"></i></span>
                 <h4>Dicas Práticas</h4>
                 <p>
@@ -87,24 +87,24 @@
         <div class="pricing">
             <div class="card">
                 <div class="content">
-                    <h4>Guia Completo em PDF</h4>
+                    <h4>Guia Completo</h4>
                     <p>Baixe o guia oficial para consultas offline e estudo aprofundado.</p>
                 </div>
-                <button class="btn"><a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf";">Download PDF</a></button>
+                <button class="btn"><a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf";>Download PDF</a></button>
             </div>
             <div class="card">
                 <div class="content">
                     <h4>Vídeos Educativos</h4>
-                    <p>Assista a palestras e vídeos sobre hábitos alimentares saudáveis.</p>
+                    <p>Assista a vídeos publicados pelo ministério da saúde sobre hábitos alimentares saudáveis.</p>
                 </div>
                 <button class="btn"><a href="https://www.youtube.com/watch?v=thUMk4coJfo&list=PLaS1ddLFkyk-ObbBv4eWkHIhc5B49a9Sw">Assistir</a></button>
             </div>
             <div class="card">
                 <div class="content">
-                    <h4>Plataformas de Apoio</h4>
-                    <p>Acesse plataformas e apps para acompanhamento nutricional.</p>
+                    <h4>Guias Alimentares</h4>
+                    <p>Sabia que existe também outros guias alimentares?</p>
                 </div>
-                <button class="btn"><a href="#">Saiba Mais</a></button>
+                <button class="btn"><a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares/publicacoes">Saiba Mais</a></button>
             </div>
         </div>
     </section>
@@ -127,13 +127,13 @@
         </div>
         <div class="column cell">
             <h4>Idealizadores do Projeto</h4>
-            <p>Brayan Vinicius | Jonathan Shimite</p>
-            <p>Lincoln Single | Marcello Tonnon</p>
-            <p>Mayra Caroline</p>
+            <p>Brayan Vinicius, Jonathan Shimite</p>
+            <p>Lincoln Single, Marcello Tonnon</p>
+            <p>e Mayra Caroline</p>
         </div>
         <div class="column cell">
             <h4>Mais Informações</h4>
-            <a href="https://www.gov.br/saude/pt-br">Ministério da Saúde</a>
+            <a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares">Ministério da Saúde</a>
             <a href="https://bvsms.saude.gov.br/bvs/publicacoes/guia_alimentar_populacao_brasileira_2ed.pdf">Material de Apoio</a>
         </div>
         
@@ -142,6 +142,82 @@
     <div class="copyright">
         Copyright © 2025 | Guia Alimentar Brasil<br /> Todos os direitos reservados.
     </div>
+
+<!-- Modal -->
+<div id="modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Sobre o Guia</h2>
+    <p>O Guia Alimentar para a População Brasileira é um documento oficial que orienta escolhas alimentares saudáveis, 
+        indo além de calorias e nutrientes. Ele valoriza a cultura, o prazer de comer, o meio ambiente e a autonomia das pessoas. 
+        Baseado na classificação dos alimentos pelo grau de processamento, o guia propõe passos simples para melhorar a alimentação 
+        do dia a dia e alerta sobre os impactos da indústria e da publicidade. Também promove práticas sustentáveis, o resgate da 
+        culinária caseira e o direito à alimentação como política pública. É um instrumento acessível e atual para toda a população.
+    </p>
+  </div>
+</div>
+
+<!-- Estilos do modal (coloque no final do style.css ou adicione um <style> no <head>) -->
+<style>
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f1f8e9;
+  color: #1b5e20;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+
+<!-- Script para funcionamento do modal -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("modal");
+  const btn = document.getElementById("btn-saiba-mais");
+  const close = document.querySelector(".close");
+
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  close.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
 </body>
 
 </html>
